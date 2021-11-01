@@ -6,8 +6,8 @@ public class Main {
         AterioivaOtus oppilas = new Oppilas();
         AterioivaOtus siivooja = new Siivooja();
 
-        opettja.haveMeal();
-        oppilas.haveMeal();
-        siivooja.haveMeal();
+        opettja.syöAteria();
+        oppilas.syöAteria();
+        siivooja.syöAteria();
     }
 }

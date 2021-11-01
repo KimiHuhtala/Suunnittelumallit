@@ -9,17 +9,17 @@ public abstract class AterioivaOtus {
     public abstract Juoma luoJuoma();
     public abstract Ruoka luoRuoka();
 
-    public void haveMeal(){
-        speaker();
-        eat();
+    public void syöAteria(){
+        tulosta();
+        syö();
         juo();
     }
 
-    public void speaker(){
+    public void tulosta(){
         System.out.println("\n" + this.nimi + ":");
     }
 
-    public void eat(){
+    public void syö(){
         if(ruoka == null)
             ruoka = luoRuoka();
         System.out.println("Kylläpä " + ruoka + " maistuukin hyvältä!");
@@ -31,7 +31,7 @@ public abstract class AterioivaOtus {
         System.out.println("Aterian jälkeen " + juoma + " tekee terää!");
     }
 
-    public void setName(String name){
+    public void setNimi(String nimi){
         this.nimi = nimi;
     }
 }

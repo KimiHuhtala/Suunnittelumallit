@@ -2,7 +2,7 @@ package factorymethod;
 
 public class Siivooja extends AterioivaOtus {
 
-    public Siivooja(){ setName("Siivooja Masi"); }
+    public Siivooja(){ setNimi("Siivooja Masi"); }
 
     public Juoma luoJuoma(){ return new Tee(); }
 
