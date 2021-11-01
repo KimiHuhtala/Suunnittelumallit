@@ -2,6 +2,6 @@ package factorymethod;
 
 public class Donitsi implements Ruoka {
 
-    public String toString(){ return "donut"; }
+    public String toString(){ return "donitsi"; }
 
 }

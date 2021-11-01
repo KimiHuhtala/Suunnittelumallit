@@ -2,5 +2,5 @@ package factorymethod;
 
 public class Makkara implements Ruoka {
 
-    public String toString(){ return "sausage"; }
+    public String toString(){ return "makkara"; }
 }

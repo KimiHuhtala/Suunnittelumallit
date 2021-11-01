@@ -2,10 +2,10 @@ package factorymethod;
 
 public class Siivooja extends AterioivaOtus {
 
-    public Siivooja(){ setName("Janitor Jan"); }
+    public Siivooja(){ setName("Siivooja Masi"); }
 
-    public Juoma createDrink(){ return new Tee(); }
+    public Juoma luoJuoma(){ return new Tee(); }
 
-    public Ruoka createFood(){ return new Donitsi(); }
+    public Ruoka luoRuoka(){ return new Donitsi(); }
 
 }

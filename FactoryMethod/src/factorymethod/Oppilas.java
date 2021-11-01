@@ -2,10 +2,10 @@ package factorymethod;
 
 public class Oppilas extends AterioivaOtus {
 
-    public Oppilas(){ setName("Student Sharon"); }
+    public Oppilas(){ setName("Oppilas Paavo"); }
 
-    public Juoma createDrink() { return new Limu(); }
+    public Juoma luoJuoma() { return new Limu(); }
 
-    public Ruoka createFood(){ return new Makkara(); }
+    public Ruoka luoRuoka(){ return new Makkara(); }
 
 }

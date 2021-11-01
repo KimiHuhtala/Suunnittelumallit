@@ -2,17 +2,17 @@ package factorymethod;
 
 public abstract class AterioivaOtus {
 
-    Juoma drink = null;
-    Ruoka food = null;
+    Juoma juoma = null;
+    Ruoka ruoka = null;
     String name = null;
 
-    public abstract Juoma createDrink();
-    public abstract Ruoka createFood();
+    public abstract Juoma luoJuoma();
+    public abstract Ruoka luoRuoka();
 
     public void haveMeal(){
         speaker();
         eat();
-        drink();
+        juo();
     }
 
     public void speaker(){
@@ -20,15 +20,15 @@ public abstract class AterioivaOtus {
     }
 
     public void eat(){
-        if(food == null)
-            food = createFood();
-        System.out.println("This " + food + " tastes awesome!");
+        if(ruoka == null)
+            ruoka = luoRuoka();
+        System.out.println("Kylläpä " + ruoka + " maistuukin hyvältä!");
     }
 
-    public void drink(){
-        if (drink == null)
-            drink = createDrink();
-        System.out.println("After the meal a glass of " + drink + " does good!");
+    public void juo(){
+        if (juoma == null)
+            juoma = luoJuoma();
+        System.out.println("Aterian jälkeen " + juoma + " tekee terää!");
     }
 
     public void setName(String name){

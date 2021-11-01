@@ -2,10 +2,10 @@ package factorymethod;
 
 public class Opettaja extends AterioivaOtus {
 
-    public Opettaja(){ setName("Teacher Trudy"); }
+    public Opettaja(){ setName("Opettaja Pekka"); }
 
-    public Juoma createDrink(){ return new Vesi(); }
+    public Juoma luoJuoma(){ return new Vesi(); }
 
-    public Ruoka createFood(){ return new Salaatti(); }
+    public Ruoka luoRuoka(){ return new Salaatti(); }
 
 }
