@@ -4,7 +4,7 @@ public abstract class AterioivaOtus {
 
     Juoma juoma = null;
     Ruoka ruoka = null;
-    String name = null;
+    String nimi = null;
 
     public abstract Juoma luoJuoma();
     public abstract Ruoka luoRuoka();
@@ -16,7 +16,7 @@ public abstract class AterioivaOtus {
     }
 
     public void speaker(){
-        System.out.println("\n" + this.name + ":");
+        System.out.println("\n" + this.nimi + ":");
     }
 
     public void eat(){
@@ -32,6 +32,6 @@ public abstract class AterioivaOtus {
     }
 
     public void setName(String name){
-        this.name = name;
+        this.nimi = nimi;
     }
 }
