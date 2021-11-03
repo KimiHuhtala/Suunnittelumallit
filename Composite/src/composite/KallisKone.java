@@ -2,7 +2,8 @@ package composite;
 
 public class KallisKone implements Tehdas {
     @Override
-    public KoneenOsat createComputer() {
+    // Luo kalliin tietokoneen
+    public KoneenOsat luoTietokone() {
         KoneenOsat naytonohjain = new NaytonohjainAsus();
         KoneenOsat muisti = new MuistiCrucial();
         KoneenOsat nettikortti = new NettikorttiPCIe();

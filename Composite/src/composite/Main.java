@@ -2,24 +2,27 @@ package composite;
 
 class Main {
     public static void main(String[] args){
-        Tietokone computer = new Tietokone();
+        Tietokone tietokone = new Tietokone();
 
-        Tehdas factory = new HalpaKone();
-        computer.setComputer(factory.createComputer());
-        System.out.println(" --- Edullisin kone --- ");
-        System.out.println("Tietokoneen hinta: " + computer.getComputer().haeHinta() + "€");
-        System.out.println("Tietokoneen osat: " + computer.getComputer().haeOsa());
+        Tehdas tehdas = new HalpaKone();
+        tietokone.setKone(tehdas.luoTietokone());
+        System.out.println("--Edullisin kone--");
+        System.out.println("Tietokoneen hinta: " + tietokone.getKone().haeHinta() + "€");
+        System.out.println("Tietokoneen osat: " + tietokone.getKone().haeOsa());
+        System.out.println("---");
 
-        factory = new KeskivertoKone();
-        computer.setComputer(factory.createComputer());
-        System.out.println("\n --- Keskihintainen kone --- \n");
-        System.out.println("Tietokoneen hinta: " + computer.getComputer().haeHinta() + "€");
-        System.out.println("Tietokoneen osat: " + computer.getComputer().haeOsa());
+        tehdas = new KeskivertoKone();
+        tietokone.setKone(tehdas.luoTietokone());
+        System.out.println("--Keskihintainen kone--");
+        System.out.println("Tietokoneen hinta: " + tietokone.getKone().haeHinta() + "€");
+        System.out.println("Tietokoneen osat: " + tietokone.getKone().haeOsa());
+        System.out.println("---");
 
-        factory = new KallisKone();
-        computer.setComputer(factory.createComputer());
-        System.out.println("\n --- Kallein kone --- \n");
-        System.out.println("Tietokoneen hinta: " + computer.getComputer().haeHinta() + "€");
-        System.out.println("Tietokoneen osat: " + computer.getComputer().haeOsa());
+        tehdas = new KallisKone();
+        tietokone.setKone(tehdas.luoTietokone());
+        System.out.println("--Kallein kone--");
+        System.out.println("Tietokoneen hinta: " + tietokone.getKone().haeHinta() + "€");
+        System.out.println("Tietokoneen osat: " + tietokone.getKone().haeOsa());
+        System.out.println("---");
     }
 }

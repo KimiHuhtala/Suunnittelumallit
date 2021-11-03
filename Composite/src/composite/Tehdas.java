@@ -1,5 +1,5 @@
 package composite;
 
 public interface Tehdas {
-    public abstract KoneenOsat createComputer();
+    public abstract KoneenOsat luoTietokone();
 }

@@ -28,7 +28,7 @@ public class EmolevyAsus implements KoneenOsat {
         componentit.add(component);
     }
 
-    public boolean removeComponent(KoneenOsat component){
+    public boolean poistaKomponentti(KoneenOsat component){
         for(KoneenOsat osa : componentit){
             if(osa.haeOsa().equals(component.haeOsa())){
                 componentit.remove(component);

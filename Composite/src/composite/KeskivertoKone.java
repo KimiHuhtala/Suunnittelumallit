@@ -2,7 +2,8 @@ package composite;
 
 public class KeskivertoKone implements Tehdas {
     @Override
-    public KoneenOsat createComputer() {
+    // Luo keskihintaisen tietokoneen
+    public KoneenOsat luoTietokone() {
         KoneenOsat naytonohjain = new NaytonohjainAsus();
         KoneenOsat muisti = new MuistiCorsair();
         KoneenOsat nettikortti = new NettikorttiPCIe();

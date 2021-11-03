@@ -4,11 +4,11 @@ public class Tietokone {
 
     private KoneenOsat kone;
 
-    public KoneenOsat getComputer() {
+    public KoneenOsat getKone() {
         return kone;
     }
 
-    public void setComputer(KoneenOsat kone) {
+    public void setKone(KoneenOsat kone) {
         this.kone = kone;
     }
 }

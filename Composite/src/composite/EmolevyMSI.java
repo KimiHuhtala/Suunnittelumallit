@@ -28,7 +28,7 @@ public class EmolevyMSI implements KoneenOsat {
         componentit.add(component);
     }
 
-    public boolean removeComponent(KoneenOsat component){
+    public boolean poistaKomponentti(KoneenOsat component){
         for(KoneenOsat part : componentit){
             if(part.haeOsa().equals(component.haeOsa())){
                 componentit.remove(component);
