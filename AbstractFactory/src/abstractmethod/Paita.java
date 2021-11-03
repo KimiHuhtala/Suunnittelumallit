@@ -1,5 +1,5 @@
 package abstractmethod;
 
-public interface IPaita {
+public interface Paita {
     public abstract void generoiPaita();
 }

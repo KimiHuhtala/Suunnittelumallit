@@ -1,5 +1,5 @@
 package abstractmethod;
 
-public interface IKengät {
+public interface Kengät {
     public abstract void generoiKengät();
 }

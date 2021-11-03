@@ -1,5 +1,5 @@
 package abstractmethod;
 
-public interface IHattu {
+public interface Hattu {
     public abstract void generoiHattu();
 }

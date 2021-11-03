@@ -1,6 +1,6 @@
 package abstractmethod;
 
-public interface ITehdas {
+public interface Tehdas {
     public abstract String createHattu();
     public abstract String createPaita();
     public abstract String createHousut();

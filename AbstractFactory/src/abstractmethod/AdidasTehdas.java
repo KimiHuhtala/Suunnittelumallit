@@ -1,6 +1,6 @@
 package abstractmethod;
 
-public class AdidasTehdas implements ITehdas {
+public class AdidasTehdas implements Tehdas {
 
     @Override
     public String createHattu() {

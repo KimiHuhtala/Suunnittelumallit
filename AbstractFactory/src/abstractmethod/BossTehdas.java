@@ -1,6 +1,6 @@
 package abstractmethod;
 
-public class BossTehdas implements ITehdas {
+public class BossTehdas implements Tehdas {
 
     @Override
     public String createHattu() {

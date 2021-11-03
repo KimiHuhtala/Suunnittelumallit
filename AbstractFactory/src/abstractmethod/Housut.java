@@ -1,5 +1,5 @@
 package abstractmethod;
 
-public interface IHousut {
+public interface Housut {
     public abstract void generoiHousut();
 }
