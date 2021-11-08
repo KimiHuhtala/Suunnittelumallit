@@ -18,7 +18,7 @@ public class Main {
         System.out.println("\n\n mutta kun jasper on valmistunut insinööriksi hänellä on päällään:");
         // Boss tehdas
         tehdas = new BossTehdas();
-        
+
         koodaaja.setHattu(tehdas.createHattu());
         koodaaja.setPaita(tehdas.createPaita());
         koodaaja.setHousut(tehdas.createHousut());
