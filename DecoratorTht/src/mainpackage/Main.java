@@ -10,15 +10,15 @@ public class Main {
         System.out.println("Kirjoita teksti joka salataan:");
         String text = scanner.nextLine();
 
-        ITiedostonKäsittelijä fileHandler = new TiedostonKäsittelijä();
-        fileHandler.write(text);
-        fileHandler.read();
+        ITiedostonKäsittelijä tiedostonKäsittelijä = new TiedostonKäsittelijä();
+        tiedostonKäsittelijä.write(text);
+        tiedostonKäsittelijä.read();
 
-        fileHandler = new Salaus(new TiedostonKäsittelijä());
-        fileHandler.write(text);
-        fileHandler.read();
+        tiedostonKäsittelijä = new Salaus(new TiedostonKäsittelijä());
+        tiedostonKäsittelijä.write(text);
+        tiedostonKäsittelijä.read();
 
-        fileHandler = new SalauksenPurku(new TiedostonKäsittelijä());
-        fileHandler.read();
+        tiedostonKäsittelijä = new SalauksenPurku(new TiedostonKäsittelijä());
+        tiedostonKäsittelijä.read();
     }
 }

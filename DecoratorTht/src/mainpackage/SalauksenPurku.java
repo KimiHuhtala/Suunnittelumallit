@@ -20,7 +20,7 @@ public class SalauksenPurku extends SalauksenKäsittelijä {
             }
             message = uncipher(message);
             reader.close();
-            System.out.println("Salauksesta purettu viesti: " + message);
+            System.out.println("Purettu viesti: " + message);
         } catch (Exception e) {
             System.out.println("Jokin meni pieleen.");
             e.printStackTrace();

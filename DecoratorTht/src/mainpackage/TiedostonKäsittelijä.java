@@ -28,7 +28,7 @@ public class TiedostonKäsittelijä implements ITiedostonKäsittelijä {
                 message += data;
             }
             reader.close();
-            System.out.println("Lue salattu viesti: " + message);
+            System.out.println("Salattu viesti: " + message);
         } catch (FileNotFoundException e) {
             System.out.println("Jokin meni pieleen.");
             e.printStackTrace();
@@ -37,6 +37,6 @@ public class TiedostonKäsittelijä implements ITiedostonKäsittelijä {
 
     @Override
     public String getDescription() {
-        return "Tiedoston Hallitsija";
+        return "Tiedoston Käsittelijä";
     }
 }
