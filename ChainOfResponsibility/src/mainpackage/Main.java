@@ -2,14 +2,19 @@ package mainpackage;
 
 public class Main {
     public static void main(String[] args){
+        // Työntekijät
         Worker worker1 = new Worker("Esa", 1962.31);
         Worker worker2 = new Worker("Matti", 2000.73);
         Worker worker3 = new Worker("Petri", 1299.40);
+
         Esimies superior = new Esimies("Mikko");
+
         Pomo boss = new Pomo("Seppo");
+
         Johtaja ceo = new Johtaja("Pete");
 
         superior.setSuccessor(boss);
+
         boss.setSuccessor(ceo);
 
         System.out.println("\n");
@@ -17,7 +22,7 @@ public class Main {
         System.out.println(worker1.getName() + " on todistanut olevansa hyvä työntekijä. " + worker1.getName() +
                 " pyytää palkan korotusta " + worker1.getSalary() + "€, uuteen 1969.31€ palkkaan");
         superior.processRequest(new PalkkaPyyntö(worker1, worker1.getSalary(), 1969.31));
-
+        
         System.out.println("\n");
 
         System.out.println(worker1.getName() + " on työskennellyt kovasti, ja kokee ansaitsevansa vielä enemmän palkkaa. " + worker1.getName() +
