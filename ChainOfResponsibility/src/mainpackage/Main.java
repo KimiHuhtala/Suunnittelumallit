@@ -22,7 +22,7 @@ public class Main {
         System.out.println(worker1.getName() + " on todistanut olevansa hyvä työntekijä. " + worker1.getName() +
                 " pyytää palkan korotusta " + worker1.getSalary() + "€, uuteen 1969.31€ palkkaan");
         superior.processRequest(new PalkkaPyyntö(worker1, worker1.getSalary(), 1969.31));
-        
+
         System.out.println("\n");
 
         System.out.println(worker1.getName() + " on työskennellyt kovasti, ja kokee ansaitsevansa vielä enemmän palkkaa. " + worker1.getName() +
