@@ -16,14 +16,14 @@ public class GuessMaster {
         }
     }
 
-    public void joinGame(Guesser guesser){               // Upon joining game give a random number that needs to be guessed
+    public void joinGame(Guesser guesser){
         guesser.getNumberFromMaster(new Memento((int) Math.round(Math.random() * 100)));
     }
 
     public synchronized void checkNumber(Guesser guesser, int guess){
-        Memento guesserMemento = (Memento) guesser.giveMementoToMaster();   // Cast the Object memento into a Memento
+        Memento guesserMemento = (Memento) guesser.giveMementoToMaster();
 
-        if(guesserMemento.getCorrectNumber() == guess) {                    // Check if the guess is correct
+        if(guesserMemento.getCorrectNumber() == guess) {
             System.out.println("\u001B[32m" + guesser.getGuesserName() + " arvauksesi " + guess + " on oikein!" + "\u001B[0m");
             System.out.println(guesser.getGuesserName() + " on lopettanut arvaamisen " + guesser.getGuesses() + " yrityksen jälkeen!\n");
             guesser.stopGuessing();
